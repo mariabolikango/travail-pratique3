@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nombre 10 et 20</title>
+</head>
+<body>
+    <script> 
+    let nombreChoisi;
+    do{
+        nombreChoisi = prompt("Veuillez saisir un nombre entre 10 et 20 : ");
+        nombreChoisi = parseInt(nombreChoisi);
+        if(isNaN(nombreChoisi)){
+            console.log("Saisir un nombre correct")
+        } else if(nombreChoisi < 10){
+            console.log(" Plus Grand! ")
+        } else if(nombreChoisi > 20){
+            console.log(" Plus Petit! ")
+        }
+    } while(isNaN(nombreChoisi)|| nombreChoisi < 10 || nombreChoisi > 20)
+      console.log(nombreChoisi + " est compris entre 10 et 20")
+    </script>
+    
+</body>
+</html>

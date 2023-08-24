@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10 nombre suivant</title>
+</head>
+<body>
+    <script>
+
+        let nombreDeDepart;
+        do{
+            nombreDeDepart = parseInt(prompt("Veuillez entrer un nombre"))
+            if(isNaN(nombreDeDepart)){
+                console.log("saisir un nombre correct")
+            } else if(!isNaN(nombreDeDepart)){
+                console.log("Les dix nombres suivants sont : ")
+                for (let i = nombreDeDepart + 1; i <= nombreDeDepart + 10; i++){
+                    console.log(i)
+                }
+            }
+        } while(isNaN(nombreDeDepart))
+    </script>
+    
+</body>
+</html>

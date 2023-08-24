@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Equation du second degré</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+    let x1, x2, x0, a, b, c
+    do{
+     a = parseInt(prompt("Entrez la valeur de a : "))
+     b = parseInt(prompt("Entrez la valeur de b : "))
+     c = parseInt(prompt("Entrez la valeur de c : "))
+     delta = Math.pow(b,2) - 4*(a*c)
+     console.log("la valeur de Delta est : " + delta)
+
+     if(isNaN(a, b, c )){
+        console.log("Veuillez saisir un nombre")
+    } else if(delta > 0){
+        x1 = ((-b) - Math.sqrt(delta)/(2*a)) 
+        x2 = ((-b) + Math.sqrt(delta)/(2*a)) 
+          console.log("Puisque delta est superieur à 0 les valeurs de x1 et x2 sont: " + x1 + ' et ' + x2)
+
+    } else if(delta === 0){
+        x0 = (-b)/(2*a)
+        console.log("Puisque delta est égal à 0 la valeur de x0 est : " + x0)
+
+    } else if (delta < 0)
+        console.log(" Delta n'a pas de solution réelle puisqu'il est inferieur à 0 ")
+
+    } while(isNaN(a, b, c ))
+    </script>
+    
+</body>
+</html>

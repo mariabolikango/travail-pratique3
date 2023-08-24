@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nombre entre 1 et 3</title>
+</head>
+<body>
+    <script>
+        let nombreChoisi;
+        do{
+            nombreChoisi = prompt("veuillez saisir un nombre entre 1 et 3 : ") ;
+            nombreChoisi = parseInt(nombreChoisi)
+        } while (isNaN(nombreChoisi) || nombreChoisi < 1 || nombreChoisi > 3);
+        console.log(nombreChoisi + " est compris entre 10 et 20" )
+    </script>
+    
+</body>
+</html>

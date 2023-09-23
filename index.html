@@ -11,7 +11,7 @@
      let motDePasse = 1234
      let chiffre
      while(chiffre !== motDePasse) {
-        chiffre = prompt("votre chiffre") * 1
+        chiffre = parseInt(prompt("votre chiffre"))
         if (chiffre === motDePasse){
             console.log("BIENVENU")
         }
